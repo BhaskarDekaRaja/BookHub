@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859">
+<title>My Task</title>
+<style>
+	body{
+	background-color:#48D1CC;
+	color: #F5F5DC;
+	}
+	#Taj{
+	font-size: 30px;
+	font-weight:bold;
+	color:aqua;
+	border:1px solid white;
+	}
+	#Liberty{
+	font-size: 30px;
+	font-weight:bold;
+	color:aqua;
+	border:1px solid white;	
+	}
+	#Eiffel{
+	font-size: 30px;
+	font-weight:bold;
+	color:aqua;
+	border:1px solid white;	
+	}
+	table{
+	height:800px;
+	width:100%;
+	}
+	#tr1{
+	background-color:white;
+	height:80px;
+	}
+	#tr1 td{
+	width:17%;
+	font-size:30px;
+	color: black;
+	}
+	#submit1{
+	font-size:70px;
+	height:90px;
+	}
+	#tr2{
+	background-color:gray;
+	margin:5px;
+	}
+	#button1{
+	font-size:75px;
+	}
+	#button2{
+	font-size:75px;
+	width:167px;
+	}
+	#button3{
+	font-size:75px;
+	}
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+    color:white; 
+}
+.modal-content {
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    background-color:none;
+}
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.center1{
+	color: white;
+}
+#Home1{
+	font-family: cursive;
+	text-align: center;
+	color: #F5F5DC;
+	font-size: 40px;
+}
+#Home2{
+	text-align: center;
+	border: 1px solid;
+	color: white;
+	background-color: #48C9B0; 
+}
+#Home2:hover{
+	font-size: 30px;
+}
+#MAHAL{
+	color: white;
+	text-align: center;
+}
+#LIB{
+	color: white;
+	text-align: center;
+}
+#EFF{
+	color: white;
+	text-align: center;
+}
+.Booking{
+	color: #6633CC;
+	font-size: 30px;
+}
+.details1{
+	font-size: 30px;
+}
+.details2{
+	text-align: center;
+	font-size: 30px;
+}
+</style>
+</head>
+<body>
+    <form action="C:/Users/Win7/Desktop/NEw%20Task/WEB.html"> 
+		<a href="https://www.facebook.com/" target="_blank"><img src="C:/Users/Win7/Desktop/rofiqweb/fb.png" width="50px" height="20px" alt="Facebook" align="right" id="fb1" /></a>
+		<a href="https://www.twitter.com/" target="_blank"><img src="C:/Users/Win7/Desktop/rofiqweb/tw.png" width="50px" height="20px" alt="Twitter" align="right" /></a>
+		<a href="https://www.gmail.com/" target="_blank"><img src="C:/Users/Win7/Desktop/rofiqweb/gmail.png" width="50px" height="20px" alt="Gmail" align="right" /></a>
+		<a href=https://www.youtube.com/" target="_blank"><img src="C:/Users/Win7/Desktop/rofiqweb/youtube.jpg" alt="YouTube" width="50px" height="20px" align="right" 
+			/></a>
+<h1 id="Home1" valign="top"><u>DEKARAJA TOURISM</u></h1>
+<h2 id="Home2">Countries Where we Provide Our Services</h2>
+	<table border="1">
+		<tr id="tr1">
+			<td><a href="#MAHAL"><button onclick="button1A()" id="button1">INDIA</button></a></td>
+			<td><a href="#LIB"><button onclick="button2A()" id="button2">USA</button></a></td>
+			<td><a href="#EFF"><button onclick="button3A()" id="button3">FRANCE</button></a></td>
+			<p class="Booking">For Booking Enter Your Email And Password:</p>
+			<td>User Name:<input type="email" id="userName"></td>
+			<td>Password:<input type="password" id="Password1"></td>
+			<td><input type="submit" onclick="return myFunction()" id="submit1"></td>
+		</tr >
+		<tr id="tr2">
+			<td colspan="6" valign = "top">
+
+			<img alt="INDIA" src="C:\Users\Win7\Desktop\TajMahal.jpg" width="435px" height="350px" id="myBtn">
+			<img alt="USA" src="C:\Users\Win7\Desktop\US.jpg" width="440px" height="350px" id="myBtn1" >		
+			<img alt="PARIS" src="C:\Users\Win7\Desktop\Paris.jpg" width="440px" height="350px" id="myBtn2" >
+			
+			<img alt="INDIA" src="C:\Users\Win7\Desktop\project\Kaziranga.jpg" width="435px" height="350px" id="myBtn3">
+			<img alt="USA" src="C:\Users\Win7\Desktop\NEw Task\USA2.jpg" width="440px" height="350px" id="myBtn4">		
+			<img alt="PARIS" src="C:\Users\Win7\Desktop\NEw Task\france2.jpg" width="440px" height="350px" id="myBtn5" align="right">
+			
+			<div id="myModal" class="modal">
+  			
+  			<div class="modal-content">
+    		<span class="close">&times;</span>
+    		<article>
+    			<details class="details1">
+    				<SUMMARY>About Taj</SUMMARY>
+    				<article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				 proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </article>
+    			</details>
+    			<details align="right" class="details2">
+    				<SUMMARY>How To Reach</SUMMARY>
+    				<article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				 proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </article>
+    			</details>
+    			<h1 id="Taj" align="center">THE TAJ MAHAL</h1>The Taj Mahal  meaning "Crown of the Palace" is an ivory-white marble mausoleum on the south bank of the Yamuna
+river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor, Shah Jahan (reigned from 1628 to 1658), to house the tomb 
+of his favourite wife, Mumtaz Mahal. The tomb is the centrepiece of a 17-hectare (42-acre) complex, which includes a mosque and a guest house, and is set in 
+formal gardens bounded on three sides by a crenellated wall.
+Construction of the mausoleum was essentially completed in 1643 but work continued on other phases of the project for another 10 years. 
+The Taj Mahal complex is believed to have been completed in its entirety in 1653 at a cost estimated at the time to be around 32 million 
+rupees, which in 2015 would be approximately 52.8 billion rupees (U.S. $827 million). The construction project employed some 20,000 artisans
+under the guidance of a board of architects led by the court architect to the emperor, Ustad Ahmad Lahauri.
+The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being "the jewel of Muslim art in India and one of the 
+universally admired masterpieces of the world's heritage". It is regarded by many as the best example of Mughal architecture and a 
+symbol of India's rich history. The Taj Mahal attracts 7–8 million visitors a year. In 2007, it was declared a winner of the New7Wonders of 
+the World (2000–2007) initiative.
+The Taj Mahal was commissioned by Shah Jahan in 1631, to be built in the memory of his wife Mumtaz Mahal, a Persian princess who died 
+giving birth to their 14th child, Gauhara Begum.[6] Construction of the Taj Mahal began in 1632.[7] The imperial court documenting Shah 
+Jahan's grief after the death of Mumtaz Mahal illustrate the love story held as the inspiration for Taj Mahal.[8][9] The principal mausoleum
+was completed in 1643 and the surrounding buildings and garden were finished about five years later.[10]
+The Taj Mahal incorporates and expands on design traditions of Persian and earlier Mughal architecture. Specific inspiration came from 
+successful Timurid and Mughal buildings including the Gur-e Amir (the tomb of Timur, progenitor of the Mughal dynasty, in Samarkand),
+[11] Humayun's Tomb, Itmad-Ud-Daulah's Tomb (sometimes called the Baby Taj), and Shah Jahan's own Jama Masjid in Delhi. While earlier 
+Mughal buildings were primarily constructed of red sandstone, Shah Jahan promoted the use of white marble inlaid with semi-precious stones.
+Buildings under his patronage reached new levels of refinement.[12]
+The tomb is the central focus of the entire complex of the Taj Mahal. It is a large, white marble structure standing on a square plinth and
+consists of a symmetrical building with an iwan (an arch-shaped doorway) topped by a large dome and finial. Like most Mughal tombs, the basic 
+elements are Persian in origin.[13]
+The base structure is a large multi-chambered cube with chamfered corners forming an unequal eight-sided structure that is approximately 
+55 metres (180 ft) on each of the four long sides. Each side of the iwan is framed with a huge pishtaq or vaulted archway with two similarly 
+shaped arched balconies stacked on either side. This motif of stacked pishtaqs is replicated on the chamfered corner areas, making the design 
+completely symmetrical on all sides of the building. Four minarets frame the tomb, one at each corner of the plinth facing the chamfered 
+corners.The main chamber houses the false sarcophagi of Mumtaz Mahal and Shah Jahan; the actual graves are at a lower level.[14]
+
+</article>
+  			</div>
+			</div>
+			
+			<div id="myModal1" class="modal">
+  			<div class="modal-content">
+  				
+    		<span class="close">&times;</span>
+    		<article>
+    			<details class="details1">
+    				<SUMMARY>About Statue of Liberty</SUMMARY>
+    				<article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				 proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </article>
+    			</details>
+    			<details align="right" class="details2">
+    				<SUMMARY>How To Reach</SUMMARY>
+    				<article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				 proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </article>
+    			</details>
+    			<h1 id="Liberty" align="center">THE STATUE OF LIBERTY</h1>The Statue of Liberty  is a colossal neoclassical sculpture on 
+Liberty Island in New York Harbor in New York City, in the United States. The copper statue, a gift from the people of France to the people
+of the United States, was designed by French sculptor Frédéric Auguste Bartholdi and built by Gustave Eiffel. The statue was dedicated on
+October 28, 1886.
+The Statue of Liberty is a figure of a robed woman representing Libertas, a Roman liberty goddess. She holds a torch above her head with her 
+right hand, and in her left hand carries a tabula ansata inscribed in Roman numerals with "JULY IV MDCCLXXVI" (July 4, 1776), the date of the 
+U.S. Declaration of Independence. A broken chain lies at her feet as she walks forward. The statue became an icon of freedom and of the United 
+States, and was a welcoming sight to immigrants arriving from abroad.
+Bartholdi was inspired by a French law professor and politician, Édouard René de Laboulaye, who is said to have commented in 1865 that any 
+monument raised to U.S. independence would properly be a joint project of the French and U.S. peoples. Because of the post-war instability in 
+France, work on the statue did not commence until the early 1870s. In 1875, Laboulaye proposed that the French finance the statue and the U.S.
+provide the site and build the pedestal. Bartholdi completed the head and the torch-bearing arm before the statue was fully designed, and these 
+pieces were exhibited for publicity at international expositions.
+The torch-bearing arm was displayed at the Centennial Exposition in Philadelphia in 1876, and in Madison Square Park in Manhattan from 1876 to 
+1882. Fundraising proved difficult, especially for the Americans, and by 1885 work on the pedestal was threatened by lack of funds. Publisher
+Joseph Pulitzer, of the New York World, started a drive for donations to finish the project and attracted more than 120,000 contributors, most 
+of whom gave less than a dollar. The statue was built in France, shipped overseas in crates, and assembled on the completed pedestal on what 
+was then called Bedloe's Island. The statue's completion was marked by New York's first ticker-tape parade and a dedication ceremony presided 
+over by President Grover Cleveland.
+The statue was administered by the United States Lighthouse Board until 1901 and then by the Department of War; since 1933 it has been 
+maintained by the National Park Service. Public access to the balcony around the torch has been barred for safety since 1916.
+According to the National Park Service, the idea for the Statue of Liberty was first proposed by Édouard René de Laboulaye, president of the
+French Anti-Slavery Society and a prominent and important political thinker of his time. The project is traced to a mid-1865 conversation between
+de Laboulaye, a staunch abolitionist, and Frédéric Bartholdi, a sculptor. In after-dinner conversation at his home near Versailles, Laboulaye,
+an ardent supporter of the Union in the American Civil War, is supposed to have said: "If a monument should rise in the United States, as a 
+memorial to their independence, I should think it only natural if it were built by united effort—a common work of both our nations."[7] The
+National Park Service, in a 2000 report, however, deemed this a legend traced to an 1885 fundraising pamphlet, and that the statue was most 
+likely conceived in 1870.[8] In another essay on their website, the Park Service suggested that Laboulaye was minded to honor the Union victory
+and its consequences, "With the abolition of slavery and the Union's victory in the Civil War in 1865, 
+</article>
+  			</div>
+			</div>
+			
+			<div id="myModal2" class="modal">
+  			
+  			<div class="modal-content">
+    		<span class="close">&times;</span>
+    		<article>
+    				<details class="details1">
+    				<SUMMARY>About  EIFFEL TOWER</SUMMARY>
+    				<article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				 proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </article>
+    			</details>
+    			<details align="right" class="details2">
+    				<SUMMARY>How To Reach</SUMMARY>
+    				<article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				 proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </article>
+    			</details>
+    			<h1 id="Eiffel" align="center">THE EIFFEL TOWER</h1>The Eiffel Tower is a wrought iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose 
+company designed and built the tower.
+
+Constructed from 1887–89 as the entrance to the 1889 World's Fair, it was initially criticized by some of France's leading artists and 
+intellectuals for its design, but it has become a global cultural icon of France and one of the most recognisable structures in the world.
+[3] The Eiffel Tower is the most-visited paid monument in the world; 6.91 million people ascended it in 2015.
+
+The tower is 324 metres (1,063 ft) tall, about the same height as an 81-storey building, and the tallest structure in Paris. Its base is square,
+measuring 125 metres (410 ft) on each side. During its construction, the Eiffel Tower surpassed the Washington Monument to become the tallest
+man-made structure in the world, a title it held for 41 years until the Chrysler Building in New York City was finished in 1930. Due to the 
+addition of a broadcasting aerial at the top of the tower in 1957, it is now taller than the Chrysler Building by 5.2 metres (17 ft).
+Excluding transmitters, the Eiffel Tower is the second tallest structure in France after the Millau Viaduct.
+
+The tower has three levels for visitors, with restaurants on the first and second levels. The top level's upper platform is 276 m (906 ft) 
+above the ground – the highest observation deck accessible to the public in the European Union. Tickets can be purchased to ascend by stairs 
+or lift to the first and second levels. The climb from ground level to the first level is over 300 steps, as is the climb from the first level 
+to the second. Although there is a staircase to the top level, it is usually accessible only by lift.
+The design of the Eiffel Tower was the product of Maurice Koechlin and Émile Nouguier, two senior engineers working for the Compagnie des
+Établissements Eiffel, after discussion about a suitable centrepiece for the proposed 1889 Exposition Universelle, a world's fair to celebrate
+the centennial of the French Revolution. Eiffel openly acknowledged that inspiration for a tower came from the Latting Observatory built in
+New York City in 1853.[4] In May 1884, working at home, Koechlin made a sketch of their idea, described by him as "a great pylon, consisting 
+of four lattice girders standing apart at the base and coming together at the top, joined together by metal trusses at regular intervals".
+[5] Eiffel initially showed little enthusiasm, but he did approve further study, and the two engineers then asked Stephen Sauvestre, the head of
+company's architectural department, to contribute to the design. Sauvestre added decorative arches to the base of the tower, a glass pavilion to
+the first level, and other embellishments.
+The new version gained Eiffel's support: he bought the rights to the patent on the design which Koechlin, Nougier, and Sauvestre had taken out,
+and the design was exhibited at the Exhibition of Decorative Arts in the autumn of 1884 under the company name. On 30 March 1885, Eiffel 
+presented his plans to the Société des Ingénieurs Civils; after discussing the technical problems and emphasising the practical uses of the 
+tower, he finished his talk by saying the tower would symbolise,
+Not only the art of the modern engineer, but also the century of Industry and Science in which we are living, and for which the way was 
+prepared by the great scientific movement of the eighteenth century and by the Revolution of 1789, to which this monument will be built as an 
+expression of France's gratitude.[6]
+</article>
+
+  			</div>
+			</div>
+			</div>
+			</div>
+			
+			<div id="myModal3" class="modal">
+  			
+  			<div class="modal-content">
+    		<span class="close">&times;</span>
+    		<article>
+    			<details class="details1">
+    				<SUMMARY>About KAZIRANGA</SUMMARY>
+    				<article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				 proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </article>
+    			</details>
+    			<details align="right" class="details2">
+    				<SUMMARY>How To Reach</SUMMARY>
+    				<article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				 proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </article>
+    			</details>
+    			<h1 id="Eiffel" align="center">KAZIRANGA</h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</article>
+
+  			</div>
+			</div>
+
+			<div id="myModal4" class="modal">
+  			
+  			<div class="modal-content">
+    		<span class="close">&times;</span>
+    		<article>
+    			<details class="details1">
+    				<SUMMARY>About  Lomakohteeksi</SUMMARY>
+    				<article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				 proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </article>
+    			</details>
+    			<details align="right" class="details2">
+    				<SUMMARY>How To Reach</SUMMARY>
+    				<article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				 proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </article>
+    			</details>
+    			<h1 id="Eiffel" align="center">Lomakohteeksi Yhdysvallat</h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</article>
+
+  			</div>
+			</div>
+			
+			<div id="myModal5" class="modal">
+  			
+  			<div class="modal-content">
+    		<span class="close">&times;</span>
+    		<article>
+    			<details class="details1">
+    				<SUMMARY>About  Bastille Day</SUMMARY>
+    				<article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				 proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </article>
+    			</details>
+    			<details align="right" class="details2">
+    				<SUMMARY>How To Reach</SUMMARY>
+    				<article>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    				 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    				 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    				 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    				 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    				 proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </article>
+    			</details>
+    			<h1 id="Eiffel" align="center"> France marks Bastille Day with spectacular parade</h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</article>
+
+  			</div>
+			</div>
+			
+			<div align="center"><span style="color: white">Quick Links To Reach Above-----</span>  &nbsp
+			| <a href="#Home1" class="">HOME</a> |
+            Copyright &copy; 2018,DekaRaja
+		</div>
+			</td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
+    <script type="text/javascript">
+       function myFunction()
+       { 
+            if(document.getElementById("userName").value.length == 0)
+            {
+                alert("userName Is Required");
+                return false;
+            }
+            if (document.getElementById("Password1").value.length == 0)
+            {
+                alert("Password Is Required");
+                return false;
+            }
+            if(document.getElementById("userName").value == 0 || 
+                    document.getElementById("Password1").value == 0)
+            {
+                document.getElementById("userName").innerHTML = " ";
+                document.getElementById("Password1").value = "";
+            }
+            
+        }
+        var modal = document.getElementById('myModal');
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0]; 
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+        
+        var modal1 = document.getElementById('myModal1');
+        var btn1 = document.getElementById("myBtn1");
+        var span1 = document.getElementsByClassName("close")[1]; 
+        btn1.onclick = function() {
+            modal1.style.display = "block";
+        }
+        span1.onclick = function() {
+            modal1.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal1) {
+                modal1.style.display = "none";
+            }
+        }
+        
+        var modal2 = document.getElementById('myModal2');
+        var btn2 = document.getElementById("myBtn2");
+        var span2 = document.getElementsByClassName("close")[2]; 
+        btn2.onclick = function() {
+            modal2.style.display = "block";
+        }
+        span2.onclick = function() {
+            modal2.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal2) {
+                modal2.style.display = "none";
+            }
+        }
+
+        var modal3 = document.getElementById('myModal3');
+        var btn3 = document.getElementById("myBtn3");
+        var span2 = document.getElementsByClassName("close")[3]; 
+        btn3.onclick = function() {
+            modal3.style.display = "block";
+        }
+        span2.onclick = function() {
+            modal3.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal3) {
+                modal3.style.display = "none";
+            }
+        }
+
+        var modal4 = document.getElementById('myModal4');
+        var btn4 = document.getElementById("myBtn4");
+        var span2 = document.getElementsByClassName("close")[4]; 
+        btn4.onclick = function() {
+            modal4.style.display = "block";
+        }
+        span2.onclick = function() {
+            modal4.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal4) {
+                modal4.style.display = "none";
+            }
+        }
+
+        var modal5 = document.getElementById('myModal5');
+        var btn5 = document.getElementById("myBtn5");
+        var span2 = document.getElementsByClassName("close")[5]; 
+        btn5.onclick = function() {
+            modal5.style.display = "block";
+        }
+        span2.onclick = function() {
+            modal5.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal5) {
+                modal5.style.display = "none";
+            }
+        }
+    </script>

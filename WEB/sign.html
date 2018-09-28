@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body
+    {
+        background-color: #377e69;
+    }
+    .box1{
+		height:550px;
+		padding:20px;
+		width:65%;
+		border:1px solid black;
+		margin:20px;
+		background-color:whitesmoke;
+        float: left;
+        text-align: center;
+        font-size: 20px;
+	}
+.box2{
+		height:530px;
+		padding:10px;
+    padding-top: 50px;
+		width:20%;
+		border:1px solid black;
+		margin:20px;
+		background-color:whitesmoke;
+        float: left;
+        text-align: center;
+        align-items: center;
+        font-size: 32px;
+	}
+
+</style>
+
+
+
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form action="ToursProject.html"  border=2 class="box1" >
+			<h2>If you don't have account please Sign Up here</h2>
+			First Name : <input type ="text" name="fname" placeholder="Enter your First Name" id="text1"> <br> <br>
+			Last Name : <input type = "text" name="lname" placeholder="Enter your Last Name" id="text2"> <br> <br>
+			DOB : <input type ="date" name="bday" id="dob1"> <br> <br>
+			Email : <input type ="email" name="email" id="email1"> <br> <br>
+			Mobile No : <input type = "number" name="mobile" placeholder="Enter your Mobile no." id="number1" value="number"><br><br>
+			Gender : <input type = "radio" name="gender" value="male" id="male1">Male
+			<input type="radio" name="gender" value="female" id="female1">Female <br> <br> 
+			City : <input type = "text" name="fname" placeholder="Enter your fname" id="city1"> <br> <br>
+			State : <input type = "text" name="fname" placeholder="Enter your fname" id="state1"> <br> <br>
+			Country : 
+			<select name="country">
+				<option value="india">India</option>
+				<option value="usa">USA</option>
+				<option value="eng">England</option>
+				<option value="france">France</option>
+				<option value="singapur">Singapur</option>
+			</select>
+			<input type="submit" value="LogIn" onclick="return validate1()" /> 
+			<input type="reset" value="Reset"/>
+			
+    </form>
+<form action="ToursProject.html" class="box2">
+<h2>Login Here</h2>
+Email : <input type ="email" name="email" id="email2"> <br><br>
+Password: <input type= "password" id= "password"/><br><br>
+<input type="submit" value="Submit" onclick="return validate()">
+</form>
+</body>
+</html>
+<script type="text/javascript">
+	function validate()
+	 {
+		if (document.getElementById('email2').value.length == 0) 
+			{
+				alert("Email Necessary");
+				return false;
+			}
+			if (document.getElementById('password').value.length == 0) 
+			{
+				alert("Password Necessary");
+				return false;
+			} 
+	}
+
+	function validate1()
+	 {
+	 	if (document.getElementById('text1').value.length == 0) 
+			{
+				alert("First Name is Necessary");
+				return false;
+			}
+		if (document.getElementById('text2').value.length == 0) 
+			{
+				alert("Las Name is Necessary");
+				return false;
+			}
+		if (document.getElementById('dob1').value.length == 0) 
+			{
+				alert("Date of Birth is Necessary");
+				return false;
+			}
+		if (document.getElementById('email1').value.length == 0) 
+			{
+				alert("Email Id is Necessary");
+				return false;
+			}
+		if (document.getElementById('number1').value.length == 0) 
+			{
+				alert("Mobile Number is Necessary");
+				return false;
+			}
+		if (document.getElementById('city1').value.length == 0) 
+			{
+				alert("City Name is Necessary");
+				return false;
+			}  
+		if (document.getElementById('state1').value.length == 0) 
+			{
+				alert("State Name is Necessary");
+				return false;
+			}
+	}
+</script>
